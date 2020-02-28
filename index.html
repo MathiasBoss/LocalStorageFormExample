@@ -1,0 +1,43 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href=".\style.css">
+</head>
+<body>
+
+<h1>Carsale</h1>
+<h2>Add a car</h2>x
+
+<form onsubmit="createNewCar(event)">
+  <div>
+    <label>Name:
+      <div> <input name="carName" placeholder="Name"> </div>
+    </label>
+  </div>
+  <div>
+    <label>Image:
+      <div> <input name="image" type="file"> </div>
+    </label>
+  </div>
+  <div>
+    <label>Color:
+      <div> <input name="color" placeholder="Color"> </div>
+    </label>
+  </div>
+  <div>
+    <label>Description:
+      <div> <textarea name="description" placeholder="A longer car description"></textarea> </div>
+    </label>
+  </div>
+  <div>
+      <input type="submit">
+  </div>
+</form>
+
+<h2>Here are the cars</h2>
+
+<div id="carList"></div>
+
+<script src=".\script.js"></script>
+
+</body>
+</html>
